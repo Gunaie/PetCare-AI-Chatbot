@@ -1,0 +1,30 @@
+# Web框架
+fastapi==0.115.0
+uvicorn==0.34.0
+python-multipart==0.0.20
+
+# 配置管理
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.1
+
+# HTTP
+requests==2.32.3
+
+# AI/ML
+sentence-transformers==3.4.1
+chromadb==0.6.3
+
+# 文本处理
+langchain-text-splitters>=1.1.1
+
+# OCR
+paddleocr==2.7.3
+paddlepaddle==2.6.2
+
+# PDF处理
+PyMuPDF==1.24.9
+Pillow==10.4.0
+
+# 工具
+numpy==1.26.4

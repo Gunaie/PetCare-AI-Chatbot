@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare AI - 宠物知识库</title>
+    
+    <!-- 样式模块化加载 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header 组件 -->
+        <header class="app-header">
+            <div class="pet-icons">🐱 🐶</div>
+            <h1>PetCare AI</h1>
+            <p>您的智能宠物护理助手</p>
+        </header>
+
+        <!-- 文件上传卡片 -->
+        <section class="card" id="upload-card"></section>
+
+        <!-- 问答卡片 -->
+        <section class="card" id="qa-card"></section>
+    </div>
+
+    <!-- 脚本模块化加载（按依赖顺序） -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/components/FileUploader.js"></script>
+    <script src="js/components/QAComponent.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

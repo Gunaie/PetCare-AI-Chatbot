@@ -1,0 +1,115 @@
+/* ===== Card 卡片组件 ===== */
+.card {
+    background: var(--color-card);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-title {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* ===== Button 按钮组件 ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* 按钮变体 */
+.btn--secondary {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* ===== Input 输入框组件 ===== */
+.input {
+    width: 100%;
+    padding: 18px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    font-size: 16px;
+    transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* ===== Loading 加载动画 ===== */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ===== Tips 提示组件 ===== */
+.tips {
+    background: #fff5ef;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+/* ===== Result 结果展示组件 ===== */
+.result {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: #f8f9ff;
+    border-radius: var(--radius-lg);
+    border-left: 5px solid var(--color-primary);
+    display: none;
+}
+
+.result.is-visible {
+    display: block;
+}
+
+.result__content {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.result__sources {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-md);
+}

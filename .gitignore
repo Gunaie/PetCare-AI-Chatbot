@@ -1,0 +1,30 @@
+# 环境变量（含 API Key）
+.env
+
+# Python 虚拟环境
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 上传的用户文件（可能很大）
+data/*
+!data/.gitkeep
+
+# 向量数据库（可重建，且很大）
+chroma_db/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
